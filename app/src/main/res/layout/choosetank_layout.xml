@@ -150,8 +150,8 @@
                 android:id="@+id/tank10"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="240dp"
+                android:layout_marginTop="10dp"
                 android:text="10号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
