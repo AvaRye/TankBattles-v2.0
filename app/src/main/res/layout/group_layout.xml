@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/choose_pattern"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/choose_group" />
+
+    <Button
+        android:id="@+id/btn_main_ok"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/btn_main_back"
+        android:layout_alignEnd="@id/btn_main_back"
+        android:layout_alignRight="@id/btn_main_back"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/item_button"
+        android:text="@string/ok"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_main_back"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/item_button"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</RelativeLayout>
+

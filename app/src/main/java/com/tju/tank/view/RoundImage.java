@@ -21,7 +21,7 @@ import android.widget.ImageView;
 
 
 //可能会出现问题
-public class RoundImage extends ImageView {
+public class RoundImage extends android.support.v7.widget.AppCompatImageView {
 
     private Paint paint;
 

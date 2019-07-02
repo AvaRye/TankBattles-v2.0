@@ -9,8 +9,6 @@ import android.view.View;
 
 public class LifeView extends View {
     public int life;
-    private int x;
-    private int y;
     private int width = 600;
     private int height = 60;
     private int color;
@@ -32,7 +30,7 @@ public class LifeView extends View {
         this.height = height;
     }
 
-    public void getlife(int life) {
+    public void getLife(int life) {
         this.life = life;
     }
 

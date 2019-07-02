@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -18,14 +20,20 @@ import com.tju.tank.support.Key;
 public class ChooseTank extends Activity {
     RadioGroup tank;
     Button btn_main_ok;
+    Button btn_back;
     String tank_n;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);//全屏？
+
         setContentView(R.layout.choosetank_layout);
-        tank = findViewById(R.id.tank);
-        btn_main_ok = findViewById(R.id.btn_main2_ok);
+        tank = findViewById(R.id.tank_group);
+        btn_main_ok = findViewById(R.id.btn_tank_ok);
         btn_main_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +44,14 @@ public class ChooseTank extends Activity {
                 String pModel = intent.getStringExtra("model_data");
                 Toast.makeText(ChooseTank.this, "Model: " + pModel + " You have chosen " + tank_n, Toast.LENGTH_LONG).show();
                 alert_edit();
+            }
+        });
+
+        btn_back = findViewById(R.id.btn_tank_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChooseTank.this.finish();
             }
         });
     }

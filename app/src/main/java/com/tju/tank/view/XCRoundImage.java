@@ -21,7 +21,7 @@ import android.widget.ImageView;
 
 
 //可能会出现问题
-public class XCRoundImage extends ImageView {
+public class XCRoundImage extends android.support.v7.widget.AppCompatImageView {
 
     private Paint paint;
 

@@ -8,7 +8,6 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintStream;
 import java.io.PrintWriter;
-import java.net.InetAddress;
 import java.net.Socket;
 import java.nio.charset.Charset;
 import java.util.Timer;
@@ -17,26 +16,17 @@ import java.util.TimerTask;
 import com.tju.tank.R;
 import com.tju.tank.view.LifeView;
 import com.tju.tank.view.RockerView;
-import com.tju.tank.view.XCRoundImage;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Looper;
-import android.os.Message;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
-import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
-
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 
 public class ControlActivity extends Activity {
 
@@ -89,7 +79,7 @@ public class ControlActivity extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
                         | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);// 设置全屏
         // ,																		// 屏幕长亮
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_control);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         screenWidth = displayMetrics.widthPixels;
         screenHeight = displayMetrics.heightPixels;
@@ -149,7 +139,7 @@ public class ControlActivity extends Activity {
                 cmd = "C" + MyID + "8";
                 bullet_n = 100;
                 bullet.getColor(colorBullet0);
-                bullet.getlife(bullet_n);
+                bullet.getLife(bullet_n);
                 bullet.invalidate();
             }
         });
@@ -159,10 +149,10 @@ public class ControlActivity extends Activity {
                 // TODO Auto-generated method stub
                 cmd = "C" + MyID + "9";
                 life.getColor(colorLife0);
-                life.getlife(life_n = 100);
+                life.getLife(life_n = 100);
                 life.invalidate();
                 bullet.getColor(colorBullet0);
-                bullet.getlife(bullet_n = 100);
+                bullet.getLife(bullet_n = 100);
                 bullet.invalidate();
             }
         });
@@ -182,7 +172,7 @@ public class ControlActivity extends Activity {
                             if (bullet_n <= 40) {
                                 bullet.getColor(colorBullet1);
                             }
-                            bullet.getlife(bullet_n);
+                            bullet.getLife(bullet_n);
                             bullet.invalidate();
                         }
                     });
@@ -227,11 +217,11 @@ public class ControlActivity extends Activity {
         life.getColor(colorLife0);
         //       elife.getColor(Color.RED);
         bullet.getColor(colorBullet0);
-        life.getlife(life_n);
+        life.getLife(life_n);
         life.getSize(screenWidth / 3, screenHeight / 20);
 //        elife.getSize(screenWidth / 3, screenHeight / 20);
 //        elife.getlife(eLife_n);
-        bullet.getlife(bullet_n);
+        bullet.getLife(bullet_n);
         bullet.getSize(screenWidth / 3, screenHeight / 20);
     }
 
@@ -282,7 +272,7 @@ public class ControlActivity extends Activity {
                                     if (life_n <= 40) {
                                         life.getColor(colorLife1);
                                     }
-                                    life.getlife(life_n);
+                                    life.getLife(life_n);
                                     life.invalidate();
                                 }
                             });

@@ -5,4 +5,9 @@
     <color name="colorFire0">#41A9F6</color>
     <color name="colorFire1">#536A7B</color>
     <color name="theme">#72C5BA</color>
+    <color name="buttonBottom">#6caec3</color>
+    <color name="buttonTop">#4D00C2FF</color>
+    <color name="buttonLine">#d3f4ff</color>
+    <color name="buttonPressed">#EE13556F</color>
+    <color name="line">#9fe8ff</color>
 </resources>

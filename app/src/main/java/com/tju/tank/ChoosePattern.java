@@ -6,31 +6,47 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class ChoosePattern extends Activity {
     RadioGroup playModel;
     Button btn_main_ok;
+    Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pre_layout);
-        playModel = findViewById(R.id.playmodel);
-        btn_main_ok = findViewById(R.id.btn_main_ok);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);//全屏
+
+        setContentView(R.layout.pattern_layout);
+        playModel = findViewById(R.id.pattern_group);
+        btn_main_ok = findViewById(R.id.btn_pattern_ok);
         btn_main_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int checkedId = playModel.getCheckedRadioButtonId();
                 RadioButton radioButton = findViewById(checkedId);
                 String model = radioButton.getText().toString();
-                Toast.makeText(MainActivity.this, "" + model, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, ChooseTank.class);
+                Toast.makeText(ChoosePattern.this, "" + model, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ChoosePattern.this, ChooseTank.class);
                 intent.putExtra("model_data", model);
                 startActivity(intent);
+            }
+        });
+        btn_back = findViewById(R.id.btn_pattern_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChoosePattern.this.finish();
             }
         });
     }

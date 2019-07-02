@@ -20,16 +20,28 @@
         android:label="TANK"
         android:theme="@style/AppBaseTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ChooseGroup"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InitialActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBaseTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".ChoosePattern"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".control.ControlActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".ChooseTank" />
+        <activity
+            android:name=".ChooseTank"
+            android:screenOrientation="landscape" />
     </application>
+
 </manifest>
