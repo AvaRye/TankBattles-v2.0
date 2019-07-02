@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@id/up">
 
             <RadioButton
-                android:id="@+id/m_1v1"
+                android:id="@+id/g_1"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -72,7 +72,7 @@
                 android:textSize="23sp" />
 
             <RadioButton
-                android:id="@+id/m_2v2"
+                android:id="@+id/g_2"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -81,7 +81,7 @@
                 android:textSize="23sp" />
 
             <RadioButton
-                android:id="@+id/m_3v3"
+                android:id="@+id/g_3"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="180dp"
@@ -92,7 +92,7 @@
                 android:textSize="23sp" />
 
             <RadioButton
-                android:id="@+id/m_4v4"
+                android:id="@+id/g_4"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="180dp"
@@ -107,12 +107,12 @@
 
 
     <Button
-        android:id="@+id/btn_main_ok"
+        android:id="@+id/btn_group_ok"
         android:layout_width="140dp"
         android:layout_height="55dp"
-        android:layout_above="@id/btn_main_back"
-        android:layout_alignEnd="@id/btn_main_back"
-        android:layout_alignRight="@id/btn_main_back"
+        android:layout_above="@id/btn_group_back"
+        android:layout_alignEnd="@id/btn_group_back"
+        android:layout_alignRight="@id/btn_group_back"
         android:layout_marginBottom="15dp"
         android:background="@drawable/item_button"
         android:text="@string/ok"
@@ -120,7 +120,7 @@
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btn_main_back"
+        android:id="@+id/btn_group_back"
         android:layout_width="140dp"
         android:layout_height="55dp"
         android:layout_alignParentEnd="true"
