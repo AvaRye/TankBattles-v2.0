@@ -6,12 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
-
+import android.widget.*
 import com.tju.tank.control.ControlActivity
 import com.tju.tank.support.Key
 
@@ -19,7 +14,7 @@ class ChooseTank : Activity() {
     private lateinit var tank: RadioGroup
     private lateinit var btnMainOk: Button
     private lateinit var btnBack: Button
-    private var tankN: Int = 0
+    private var tankN: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +29,7 @@ class ChooseTank : Activity() {
         btnMainOk.setOnClickListener {
             val checkedId = tank.checkedRadioButtonId
             val radioButton = findViewById<RadioButton>(checkedId)
-            tankN = radioButton.text.toString().toInt()
+            tankN = radioButton.text.toString().substring(0 until radioButton.text.toString().indexOf(' '))
             val intent = intent
             val pModel = intent.getStringExtra("model_data")
             Toast.makeText(this@ChooseTank, "Model: $pModel You have chosen $tankN", Toast.LENGTH_LONG).show()

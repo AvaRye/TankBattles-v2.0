@@ -1,20 +1,5 @@
 package com.tju.tank.control
 
-import java.io.BufferedWriter
-import java.io.IOException
-import java.io.InputStream
-import java.io.OutputStreamWriter
-import java.io.PrintStream
-import java.io.PrintWriter
-import java.net.Socket
-import java.nio.charset.Charset
-import java.util.Timer
-import java.util.TimerTask
-
-import com.tju.tank.R
-import com.tju.tank.view.LifeView
-import com.tju.tank.view.RockerView
-
 import android.app.Activity
 import android.app.ProgressDialog
 import android.os.Bundle
@@ -24,7 +9,14 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import com.tju.tank.R
 import com.tju.tank.support.Key
+import com.tju.tank.view.LifeView
+import com.tju.tank.view.RockerView
+import java.io.*
+import java.net.Socket
+import java.nio.charset.Charset
+import java.util.*
 
 open class ControlActivity : Activity() {
 
@@ -89,7 +81,7 @@ open class ControlActivity : Activity() {
         })
         connectThread()
 
-        myID = intent.getIntExtra(Key.DATA,1).toChar()
+        myID = intent.getStringExtra(Key.DATA).toInt().toChar()
         tankID = "A" + myID + "1"
         waitID = "W1$myID"
         waitDialog = ProgressDialog(this@ControlActivity)

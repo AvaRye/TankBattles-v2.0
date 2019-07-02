@@ -65,7 +65,7 @@
                 android:layout_height="32dp"
                 android:layout_margin="5dp"
                 android:checked="true"
-                android:text="1号坦克"
+                android:text="1 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_margin="5dp"
-                android:text="2号坦克"
+                android:text="2 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_margin="5dp"
-                android:text="3号坦克"
+                android:text="3 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_margin="5dp"
-                android:text="4号坦克"
+                android:text="4 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -102,7 +102,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="-163dp"
-                android:text="5号坦克"
+                android:text="5 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -112,7 +112,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="10dp"
-                android:text="6号坦克"
+                android:text="6 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -122,7 +122,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="10dp"
-                android:text="7号坦克"
+                android:text="7 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -132,7 +132,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="10dp"
-                android:text="8号坦克"
+                android:text="8 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -142,7 +142,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="240dp"
                 android:layout_marginTop="-158dp"
-                android:text="9号坦克"
+                android:text="9 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -152,7 +152,7 @@
                 android:layout_height="32dp"
                 android:layout_marginLeft="240dp"
                 android:layout_marginTop="10dp"
-                android:text="10号坦克"
+                android:text="10 号坦克"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
