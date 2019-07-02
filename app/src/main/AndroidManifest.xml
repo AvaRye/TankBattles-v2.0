@@ -21,9 +21,6 @@
         android:theme="@style/AppBaseTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".ChooseGroup"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".InitialActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppBaseTheme.NoActionBar">
@@ -33,9 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ChoosePattern"
-            android:screenOrientation="landscape" />
         <activity
             android:name=".control.ControlActivity"
             android:screenOrientation="landscape" />
