@@ -2,8 +2,11 @@ package com.tju.tank.control
 
 import android.app.Activity
 import android.app.ProgressDialog
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Looper
+import android.support.annotation.ColorInt
+import android.support.annotation.ColorLong
 import android.util.Log
 import android.view.View
 import android.view.Window
@@ -51,10 +54,10 @@ open class ControlActivity : Activity() {
     private lateinit var waitDialog: ProgressDialog
     var cmd: String? = null
 
-    private val colorLife = -0x6a1554
-    private val colorBullet = -0xbe560a
-    private val colorLife1 = -0x8e90
-    private val colorBullet1 = -0xac9585
+    private val colorLife = Color.argb(180, 137, 236, 164)
+    private val colorBullet = Color.argb(180, 35, 192, 255)
+    private val colorLife1 = Color.argb(200, 255, 101, 99)
+    private val colorBullet1 = Color.argb(200, 74, 99, 117)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -243,7 +246,7 @@ open class ControlActivity : Activity() {
             outputStream.print(str)
             outputStream.flush()
         } catch (e: Exception) {
-            Log.e("error",e.toString())
+            Log.e("error", e.toString())
         }
 
     }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_new"
     tools:context=".ChoosePattern">
 
     <com.tju.tank.view.RockerView
@@ -76,21 +77,9 @@
         android:textColor="#FFFFFF" />
 
     <ImageView
-        android:id="@+id/bullet_logo"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="75dp"
-        android:src="@drawable/bullets" />
-
-    <ImageView
         android:id="@+id/life_logo"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -99,6 +88,17 @@
         android:layout_marginTop="30dp"
         android:src="@drawable/life" />
 
+    <ImageView
+        android:id="@+id/bullet_logo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/bullets" />
 
     <com.tju.tank.view.LifeView
         android:id="@+id/life"
@@ -115,6 +115,4 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp" />
-
-
 </RelativeLayout>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorLife0">#95EAAC</color>
-    <color name="colorLife1">#FF7170</color>
-    <color name="colorFire0">#41A9F6</color>
-    <color name="colorFire1">#536A7B</color>
+    <color name="colorLife0">#E689ECA4</color>
+    <color name="colorLife1">#E6FF6563</color>
+    <color name="colorBullet0">#E623C0FF</color>
+    <color name="colorBullet1">#E64A6375</color>
     <color name="theme">#72C5BA</color>
     <color name="buttonBottom">#6caec3</color>
     <color name="buttonTop">#4D00C2FF</color>
