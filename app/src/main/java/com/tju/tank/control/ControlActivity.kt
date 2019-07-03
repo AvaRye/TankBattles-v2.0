@@ -114,8 +114,6 @@ open class ControlActivity : Activity() {
             life.setColor(colorLife)
             life.setLife(100)
             life.invalidate()
-            bullet.setColor(colorBullet)
-            bullet.setLife(100)
             bullet.invalidate()
         }
 

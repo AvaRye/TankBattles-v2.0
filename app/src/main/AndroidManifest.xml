@@ -36,7 +36,9 @@
         <activity
             android:name=".ChooseTank"
             android:screenOrientation="landscape" />
-        <activity android:name=".ChoosePattern" />
+        <activity
+            android:name=".ChoosePattern"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

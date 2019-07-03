@@ -26,7 +26,7 @@ class RockerView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     var a: Int = 0
     private var mRockerBtn_R: Float = 0.toFloat()
     private val mBmpRockerBg: Bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.rocker_back1)
-    private val mBmpRockerBtn: Bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.rocker_btn)
+    private val mBmpRockerBtn: Bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.rocker_btn1)
 
     private var mCenterPoint: PointF? = null
 
